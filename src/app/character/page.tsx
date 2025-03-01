@@ -1,10 +1,10 @@
-import { Name } from "./components/Name";
+import { NameForm } from "./components/NameForm";
 
 export default function CharacterPage() {
   return (
     <div>
       <h1>Character</h1>
-      <Name />
+      <NameForm />
     </div>
   );
 }

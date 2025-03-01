@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "@/libs/redux/hooks";
 import { setName } from "@/libs/redux/slices/nameSlice";
 import React from "react";
 
-export const Name = () => {
+export const NameForm = () => {
   const { name } = useAppSelector((state) => state.name);
   const dispatch = useAppDispatch();
 
