@@ -5,7 +5,7 @@ interface INameState {
 }
 
 const initialState: INameState = {
-  name: "John Doe",
+  name: "",
 };
 
 const nameSlice = createSlice({
