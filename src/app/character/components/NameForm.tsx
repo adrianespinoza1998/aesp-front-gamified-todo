@@ -3,16 +3,18 @@
 import { CustomInput } from "@/components";
 import { useAppDispatch, useAppSelector } from "@/libs/redux/hooks";
 import { setName } from "@/libs/redux/slices/nameSlice";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export const NameForm = () => {
   const { name } = useAppSelector((state) => state.name);
   const dispatch = useAppDispatch();
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log({ name });
+    router.push("/home");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
