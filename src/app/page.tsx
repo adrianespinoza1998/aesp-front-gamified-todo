@@ -1,9 +1,5 @@
-import { Name } from "@/components/Name";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <>
-      <Name />
-    </>
-  );
+  return redirect("/character");
 }
